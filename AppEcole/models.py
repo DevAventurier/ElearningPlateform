@@ -4,7 +4,7 @@ class User(AbstractUser):
     ETUDIANT= " ETUDIANT"
     ENSEIGNANT="ENSEIGNANT"
     ADMINISTRATEUR=" ADMINISTRATEUR"
-    
+    #direct
     ROLE_CHOICES = (
         (ETUDIANT, 'Etudiant'),
         (ENSEIGNANT, 'Enseignant'),
