@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un projet</title>
+</head>
+<body>
+    
+        <div class="page-header">
+            <div class="row align-items-center">
+              <div class="col-sm-12">
+                <div class="page-sub-header">
+                  <h3 class="page-title">Ajouter Projet</h3>
+                  <ul class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="students.html">Enseignant</a>
+                    </li>
+                    <li class="breadcrumb-item active">Ajouter Projet</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card comman-shadow">
+                <div class="card-body">
+                              
+                            <a href="{% url 'liste_projet' %}" style="width: 250px; margin-left:800px;margin-bottom:5px" class="btn btn-info"><strong style="font-size: 20px; ">Listes Projets</a>
+                            <p class="alert alert-success">{{ message }}</p> 
+                            <form method="post"   enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <div class="col-12">
+                                    <div class="mb-2">
+                                    {{ form.as_p }}
+                                    </div>
+                                </div>    
+                                <button type="submit" class="btn btn-info">Enregistrer</button>
+                            </form>
+                       </div>  
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div>                       
+</body>
+</html>
+
+
+{% endblock %}
