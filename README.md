@@ -31,12 +31,12 @@ Cote prerequis installation :
 -------------------------------------------------------------------------------------------------------------------------------------
 
 					B O N U S : L I G N E S de C O M M A N D E S
-python -m pip install Pillow
-py manage.py makemigrations
-py manage.py migrate
-	? pip install mysqlclient
-pip install -U django-jazzmin
-python manage.py runserver
+	-python -m pip install Pillow
+	-py manage.py makemigrations
+	-py manage.py migrate
+	-? pip install mysqlclient
+	-pip install -U django-jazzmin
+	-python manage.py runserver
 
 --------------------------------------------------------------------------------------------------------------------------------------
 

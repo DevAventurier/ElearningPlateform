@@ -44,8 +44,7 @@
                                 <td><a href="{{ projet.projet.url }}" download>Télécharger le projet soumis</a></td>
                               
                                 <td>
-                                    <a href="{% url 'modifier_soumission' id=projet.id %}" class="btn btn-info">modifier</a>
-                                    <a href="{% url 'supprimer_soumission' id=projet.id %}" class="btn btn-danger">supprimer</a>
+                                    <a href="{% url 'modifier_soumission' id=projet.id %}" class="btn btn-info">modifier</a>    <a href="{% url 'supprimer_soumission' id=projet.id %}" class="btn btn-danger">supprimer</a>
                                 </td>
                               </tr> 
                             {% endfor %}
